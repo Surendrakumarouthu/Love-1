@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    body {
+        background-color: pink;
+    }
+    a{
+        background-color: #ffffff!important;
+        color: black;
+        border-radius: 15px!important;
+        padding: 10px 20px;
+        font-weight: 700;
+        border: 1px solid pink;
+        text-decoration: none;
+}
+.No-button {
+            padding: 10px 20px;
+            font-size: 16px;
+        
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.1s ease; 
+        }
+
+   
+        .No-button:hover {
+            transform: translateX(1px); 
+        }
+
+        
+        @keyframes nobutton {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate {
+            animation: nobutton 0.5s infinite; 
+        }
+
+  
+    @keyframes border-button {
+    0% {
+        border-left-color: red;
+        border-bottom-color: green;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+    50% {
+        border-left-color: green;
+        border-bottom-color: red;
+        border-right-color: green;
+        border-top-color: red;
+    }
+    100% {
+        border-left-color: red;
+        border-right-color: green;
+        border-top-color: green;
+        border-bottom-color: red;
+    }
+}
+
+  a:hover{
+        background-color: transparent!important;
+        border: 1px solid black;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        transition: transform 0.1s ease; 
+
+    }
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 700px;
+        flex-direction: column;
+        font-size: 16px;
+    /* border: 4px solid transparent; 
+    animation: border-button 2s infinite alternate;
+    transition: all 0.3s ease-in-out;
+    width: 50%; */
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="parent">
+            <div class="sticker">
+                <img src="https://media.tenor.com/iFXnOUD2D7oAAAAj/milk-and-mocha.gif" alt="">
+            </div>
+            <div class="text mt-4">
+                <h1 class="text-white">Hey Will You Be My GirlFriend?<i class="fas fa-heart ms-2"></i></h1>
+                <div class="buttons-group d-flex justify-content-center mt-5">
+                    <a class="No-button animate" href="yes.html">No<i class="fas fa-heart ms-2" style="color: red;"></i> </a><a class="animate ms-3" href="yes.htm l">Of Course ,Yes<i class="fas fa-heart ms-2" style="color: red;"></i> </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
